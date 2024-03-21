@@ -1,0 +1,112 @@
+/* @font-face{
+    font-family: Roboto;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype'); 
+}
+
+body{
+    font-family: Roboto;
+} */
+
+.header {
+  background-color: #26d07c;
+  color: white;
+  min-height: 82px;
+  text-align: center;
+}
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+.menu ul li {
+  display: inline;
+}
+.main {
+  color: white;
+  background-color: #26d07c;
+  min-height: 650px;
+  text-align: center;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 200px;
+}
+.main-content svg {
+  margin-top: 50px;
+  fill: white;
+}
+.lead {
+  font-size: 2em;
+  background-color: #f1f2f3;
+  min-height: 224px;
+  padding: 50px;
+  text-align: center;
+}
+.get-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: red;
+  border-buttom: none;
+}
+.get-button:hover {
+  background-color: white;
+  color: red;
+  border-color: red;
+}
+.did-you-know {
+  background-color: #26d07c;
+  color: #253746;
+  padding: 20px;
+  margin-top: 100px;
+  /* text-align: center; */
+  position: relative;
+}
+
+.did-you-know-image {
+  position: absolute;
+  height: 252px;
+  width: 212px;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -45%);
+}
+svg.chudcon,
+svg.social-icon {
+  fill: #253746;
+}
+
+svg.chudcon .clear,
+svg.social-icon .clear {
+  fill: #fff;
+}
+
+svg.chudcon .reflection,
+svg.social-icon .reflection {
+  fill: #f1f2f3;
+}
+
+svg.chudcon .shade,
+svg.social-icon .shade {
+  fill: #dfe1e3;
+}
+
+svg.chudcon .dark-shade,
+svg.social-icon .dark-shade {
+  fill: #bbbfc3;
+}
+
+.seo-service {
+  margin-top: 100px;
+}
+
+.seo-service-text > .ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.seo-service-text > .ul > .ul-li {
+  width: 100%;
+  /* list-style: none; */
+}
