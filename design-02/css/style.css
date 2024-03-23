@@ -40,9 +40,41 @@ body{
   font-size: 2em;
   background-color: #f1f2f3;
   min-height: 224px;
-  padding: 50px;
+  padding: 30px;
   text-align: center;
 }
+.lead-gen-mod-button {
+  display: inline-block;
+  min-width: 160px;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  background: #f9423a;;
+  line-height: 1.1;
+  font-size: .875rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 1rem;
+  text-align: center;
+  -webkit-border-radius: .375rem;
+  border-radius: .375rem;
+  background-clip: padding-box;
+  border: .125rem solid #f9423a;;
+  cursor: pointer;
+}
+
+.lead-gen-mod-button:hover {
+  color: #f9423a;
+  background: transparent
+}
+
+
+
+
+
+
+
+
 .get-button {
   background-color: red;
   color: white;
@@ -169,4 +201,45 @@ svg.social-icon .dark-shade {
 .fifty-fifty-content-mod-block-bttn:hover{
   color: #26d07c;
   background: transparent
+}
+
+
+
+
+
+ul.fifty-fifty-content-mod-block-ul {
+  margin: 1rem 0 0 2rem;
+}
+ul.fifty-fifty-content-mod-block-ul.one-column {
+  display: flex;
+  flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
+}
+ ul.fifty-fifty-content-mod-block-ul.one-column li.fifty-fifty-content-mod-block-ul-li {
+  width: 100%;
+  position: relative;
+  margin: 0.5rem 0;
+ }
+ ul.fifty-fifty-content-mod-block-ul li.fifty-fifty-content-mod-block-ul-li:before {
+  content: '\f05d';
+  font-size: 1.5rem;
+  left: -2rem;
+  top: 0;
+  line-height: 1;
+  position: absolute;
+  color: #26d07c;
+  /* <i class="fa-solid fa-circle-check"></i> */
+  
+//font awesome
+
+
+
+
+
+
+
+
+
+
 }
