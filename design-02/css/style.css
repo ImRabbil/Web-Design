@@ -1,22 +1,73 @@
-/* @font-face{
-    font-family: Roboto;
-    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype'); 
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: Sans-Serif_SemiBold;
+  src: url("../fonts/Open_Sans/static/OpenSans-SemiBold.ttf");
+}
+@font-face {
+  font-family: Sans-Serif_Regular;
+  src: url("../fonts/Open_Sans/static/OpenSans-Regular.ttf");
+}
+body {
+  font-family: Sans-Serif_Regular !important;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+}
+@font-face {
+  font-family: Montserrat_SemiBold;
+  src: url("../fonts/Montserrat/static/Montserrat-semibold.ttf");
+}
+@font-face {
+  font-family: Montserrat_bold;
+  src: url("../fonts/Montserrat/static/Montserrat-bold.ttf");
+}
+@font-face {
+  font-family: Montserrat_Extrabold;
+  src: url("../fonts/Montserrat/static/Montserrat-ExtraBold.ttf");
+}
+@font-face {
+  font-family: Lato_Regular;
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: Lato_Bold;
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+}
+@font-face {
+  font-family: Architects Daughter;
+  src: url("../fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf");
+}
+@font-face {
+  font-family: fontawesome;
+  src: url("../fontAwesome/fontawesome-webfont.eot");
 }
 
-body{
-    font-family: Roboto;
-} */
+.body {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  line-height: 1.5;
+  color: #253746;
+}
 
 .header {
+  width: 100%;
+  position: fixed;
   background-color: #26d07c;
   color: white;
   min-height: 82px;
-  text-align: center;
+  text-align: left;
 }
 .menu ul li a {
+  font-family: "Montserrat_SemiBold", sans-Serif_SemiBold !important;
+  font-weight: 600;
   color: white;
   text-decoration: none;
   display: inline-block;
+  font-size: 0.875rem;
 }
 .menu ul li {
   display: inline;
@@ -32,6 +83,23 @@ body{
   flex-direction: column;
   padding: 200px;
 }
+.main-content p {
+  font-family: "Montserrat_SemiBold", sans-Serif_SemiBold !important;
+  font-weight: 600;
+}
+.main-content h1 {
+  font-size: 4.95rem;
+  letter-spacing: -0.063rem;
+  font-weight: 800;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif !important;
+  margin: 0 0 2rem;
+}
+.main-content h4 {
+  font-style: italic;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
 .main-content svg {
   margin-top: 50px;
   fill: white;
@@ -43,37 +111,145 @@ body{
   padding: 30px;
   text-align: center;
 }
+.lead-content span {
+  font-weight: 400;
+  display: block;
+  padding: 0 0 0.5rem;
+  font-family: Lato_Regular !important;
+  font-style: italic;
+}
+.lead-content h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  font-weight: 800;
+  padding: 0;
+  font-family: Montserrat_Extrabold !important;
+  line-height: 1;
+}
+.span .span1 {
+  font-family: Architects Daughter !important;
+}
+
+.span > .span2 {
+  font-family: Architects Daughter !important;
+}
+
+.lead > .container > .row > .span a {
+  font-family: Lato_Bold !important;
+  color: #253746;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .lead-gen-mod-button {
   display: inline-block;
   min-width: 160px;
   position: relative;
   text-decoration: none;
   color: #fff;
-  background: #f9423a;;
+  background: #f9423a;
   line-height: 1.1;
-  font-size: .875rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: 400;
   padding: 1rem;
   text-align: center;
-  -webkit-border-radius: .375rem;
-  border-radius: .375rem;
+  -webkit-border-radius: 0.375rem;
+  border-radius: 0.375rem;
   background-clip: padding-box;
-  border: .125rem solid #f9423a;;
+  border: 0.125rem solid #f9423a;
   cursor: pointer;
 }
 
 .lead-gen-mod-button:hover {
   color: #f9423a;
-  background: transparent
+  background: transparent;
 }
 
+.youtube-marketing h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: Montserrat_Extrabold !important;
+  margin: 0 0 2rem;
+  line-height: 1;
+  padding: 0;
+  color: #253746;
+}
 
+.youtube-marketing-2 h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: Montserrat_Extrabold !important;
+  margin: 0 0 2rem;
+  line-height: 1;
+  padding: 0;
+  color: #253746;
+}
+.youtube-marketing-3 h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: Montserrat_Extrabold !important;
+  margin: 0 0 2rem;
+  line-height: 1;
+  padding: 0;
+  color: #253746;
+}
 
+.did-you-know-content h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: Montserrat_Extrabold !important;
+  margin: 0 0 2rem;
+  line-height: 1;
+  padding: 0;
+}
 
+.did-you-know-content p {
+  font-size: 1.125rem;
+  font-family: Lato_Regular !important;
+  font-style: italic;
+}
 
+.seo-service-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: Montserrat_Extrabold !important;
+  margin: 0 0 2rem;
+  line-height: 1;
+  padding: 0;
+  color: #253746;
+}
 
+.seo-service-content h4 {
+  font-family: Lato_Regular !important;
+  font-style: italic;
+  margin: -0.75rem 0 2rem;
+  font-size: 1.65rem;
+  font-weight: 400;
+  color: #253746;
+}
 
+.seo-service-text h3 {
+  font-size: 2.25rem;
+  letter-spacing: -0.0283rem;
+  font-weight: 800;
+  font-family: Montserrat_Extrabold !important;
+  margin: 0 0 2rem;
+  line-height: 1;
+  padding: 0;
+  color: #253746;
+}
+
+.seo-service-text .subtext {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-family: Lato_Regular !important;
+  font-weight: 400;
+  font-style: italic;
+  margin: -0.75rem 0 2rem;
+  color: #253746;
+}
 
 .get-button {
   background-color: red;
@@ -88,6 +264,7 @@ body{
   color: red;
   border-color: red;
 }
+
 .did-you-know {
   background-color: #26d07c;
   color: #253746;
@@ -157,6 +334,7 @@ svg.social-icon .dark-shade {
   background-color: #1d252d;
   color: white;
   padding: 10px;
+  font-size: 0.875rem;
 }
 
 .footer-links ul li {
@@ -167,79 +345,135 @@ svg.social-icon .dark-shade {
   color: white;
   text-decoration: none;
 }
-.footer-links-hr{
-  border: 1px solid white;
-  margin: 10px 0px ; !important 
+.footer-links li {
+  padding: 0.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.125);
 }
 
+.footer-links ul li:nth-child(1) {
+  border-top: none;
+}
 
-.fifty-fifty-content-mod-block-bttn-wrapper{
+.footer-bottom-social a i {
+  color: white;
+  margin-left: 20px;
+  font-size: 1rem;
+}
+
+.footer-bottom-social .item1:hover {
+  color: #0866ff;
+  transition: 0.5s;
+}
+
+.footer-bottom-social .item2:hover {
+  color: red;
+  fill-opacity: 1;
+  transition: 0.5s;
+}
+
+.footer-bottom > .footer-copyright-bot-bar-links {
+  display: flex;
+  font-size: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem 0 0;
+  color: rgba(255, 255, 255, 0.25);
+}
+.footer-bottom > .footer-copyright-bot-bar-links a {
+  color: white;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.footer-bottom > .footer-copyright-bot-bar-links a:hover {
+  color: white;
+  text-decoration: none;
+  color: #0fbfb3;
+}
+
+.fifty-fifty-content-mod-block-bttn-wrapper {
   width: 100%;
   text-align: center;
 }
-.fifty-fifty-content-mod-block-bttn-wrapper span{
-   margin: 2rem 0 0 1rem;
+.fifty-fifty-content-mod-block-bttn-wrapper span {
+  margin: 2rem 0 0 1rem;
 }
-.fifty-fifty-content-mod-block-bttn-wrapper span:first-child{
+.fifty-fifty-content-mod-block-bttn-wrapper span:first-child {
   margin-left: 0;
 }
-.fifty-fifty-content-mod-block-bttn-wrapper span.left{
+.fifty-fifty-content-mod-block-bttn-wrapper span.left {
   float: left;
 }
-.fifty-fifty-content-mod-block-bttn-wrapper span a{
+.fifty-fifty-content-mod-block-bttn-wrapper span a {
   text-decoration: none;
 }
-.fifty-fifty-content-mod-block-bttn{
+.fifty-fifty-content-mod-block-bttn {
   background: #26d07c;
-    border: .125rem solid #26d07c;
-    color: #fff;
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    text-transform: uppercase;
-    font-size: 1rem;
+  border: 0.125rem solid #26d07c;
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
-.fifty-fifty-content-mod-block-bttn:hover{
+.fifty-fifty-content-mod-block-bttn:hover {
   color: #26d07c;
-  background: transparent
+  background: transparent;
 }
 
-
-
-
-
-ul.fifty-fifty-content-mod-block-ul {
+ ul.fifty-fifty-content-mod-block-ul {
   margin: 1rem 0 0 2rem;
 }
 ul.fifty-fifty-content-mod-block-ul.one-column {
   display: flex;
   flex-wrap: wrap;
-    padding: 0;
-    list-style-type: none;
+  padding: 0;
+  list-style-type: none;
+} 
+
+
+ul.fifty-fifty-content-mod-block-ul.one-column
+  li.fifty-fifty-content-mod-block-ul-li {
+    width: 100%;
+    position: relative;
+    margin: .5rem 0;
+    /* padding: 0 0 0 2rem; */
+    
 }
- ul.fifty-fifty-content-mod-block-ul.one-column li.fifty-fifty-content-mod-block-ul-li {
-  width: 100%;
-  position: relative;
-  margin: 0.5rem 0;
- }
- ul.fifty-fifty-content-mod-block-ul li.fifty-fifty-content-mod-block-ul-li:before {
+.fifty-fifty-content-mod-block-ul .fifty-fifty-content-mod-block-ul-li:before {
+  color: #26d07c;
   content: '\f05d';
   font-size: 1.5rem;
   left: -2rem;
-  top: 0;
-  line-height: 1;
+  top: 1px;
   position: absolute;
-  color: #26d07c;
-  /* <i class="fa-solid fa-circle-check"></i> */
-  
-//font awesome
+  font-family: FontAwesome;
+  font-weight: 900;
+  line-height: 1;
+  list-style-type: none;
 
+    
+}
 
-
-
-
-
-
-
-
-
+.footer-contact-col-address {
+  font-size: 0.75rem;
+  font-family: Lato_Regular !important;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+}
+.footer-contact-col-phone-toll-free {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.footer-contact-col-phone-toll-free a {
+  text-decoration: none;
+}
+.footer-contact-col-phone-toll-free a span {
+  color: #0fbfb3;
+  text-decoration: none;
+}
+.footer-contact-col-phone-local a {
+  color: white;
+  text-decoration: none;
 }
