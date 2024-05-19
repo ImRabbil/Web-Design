@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.content {
+  background-color: #f0f2f5;
+  height: 686px;
+  width: 1903px;
+}
+.logo img {
+  margin: 44px 0 4px 0;
+  width: 240px;
+}
+.logo {
+  text-align: center;
+}
+.alert {
+  margin: auto;
+  width: 612px;
+  margin-bottom: 18px;
+}
+
+.alert .icon-text {
+  border: 1px solid #3578e5;
+  background-color: #3578e5;
+  padding: 0 0 0 40px;
+}
+
+.alert .alert-text {
+  background: #fff;
+  margin: 0;
+  padding: 9px 10px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.card-section {
+  margin: auto;
+  background-color: #fff;
+  width: 398px;
+  height: 362px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.card-section .text {
+  font-size: 18px;
+  text-align: center;
+  line-height: 22px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+.card-section .alert-two {
+  padding: 15px;
+  border: 1px solid #e2c822;
+  background-color: #fff9d7;
+  margin: 4px 16px 6px 16px;
+  text-align: center;
+  font-size: 14px;
+}
+.card-section .input-field {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 16px;
+  margin: auto;
+}
+.card-section .input-field .input-one {
+  border-radius: 6px;
+  border: 1px solid #dddfe2;
+  font-size: 17px;
+  padding: 14px 16px;
+  color: #dddfe2;
+  margin: 5px 0;
+}
+.card-section .input-field .input-two {
+  border-radius: 6px;
+  font-size: 17px;
+  padding: 14px 16px;
+  margin: 5px 0;
+  border: 1px solid #dddfe2;
+  color: #dddfe2;
+}
+
+.card-section .button {
+  background-color: #3578e5;
+  border: none;
+  text-align: center;
+  padding: 18px 0;
+  margin: 0 16px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.card-section .card-footer {
+  padding: 12px 0 18px;
+  display: flex;
+  margin: 8px 16px;
+  justify-content: center;
+}
+.card-section .card-footer .link-one {
+  margin: 0 5px;
+  color: #3578e5;
+}
+.card-section .card-footer .link-one a {
+  color: #3578e5;
+  text-decoration: none;
+}
+.card-section .card-footer .link-two a {
+  color: #3578e5;
+  text-decoration: none;
+}
+.card-section .card-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer{
+    padding-top: 80px;
+    width: 980px;
+    margin: auto;
+}
+
+.footer .lang ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer .lang ul li{
+    margin: 0 5px;
+    list-style: none;
+}
+.footer .hr{
+    border-bottom: 1px solid seagreen;
+    margin-top: 14px;
+}
+.footer .all-link ul{
+   display: flex;
+   flex-wrap: wrap;
+   padding:  20px 0;
+}
+.footer .all-link ul li{
+  margin: 0 5px;
+ }
