@@ -1,0 +1,388 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  background-color: #f8f6f8;
+  width: 100%;
+}
+@font-face {
+  font-family: SemiBold;
+  src: url(/../../fonts/Hind_Siliguri/HindSiliguri-SemiBold.ttf);
+}
+@font-face {
+  font-family: Mediuam;
+  src: url(/../../fonts/Hind_Siliguri/HindSiliguri-Medium.ttf);
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url(/../../fonts/Roboto_Serif/static/RobotoSerif-Bold.ttf);
+}
+
+.header_button button {
+  font-family: "SemiBold", Sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  color: #000000;
+  background-color: #88bf48;
+  border-style: none;
+  padding: 8px 25px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.header_button button:hover {
+  color: #ffffff;
+  background-color: #0a7900;
+}
+.contact h1 {
+  color: #1e302b;
+  font-family: "Mediuam", Sans-serif;
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.2em;
+  margin-top: 20px;
+}
+
+.contact h2 {
+  font-family: "RobotoBold", Sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-bottom: 20px;
+}
+.slider {
+  padding: 0 85px;
+  margin-bottom: 20px;
+}
+.details {
+  width: 100%;
+  margin-top: 20px;
+}
+.details .details_img {
+  width: 45%;
+}
+.details .text_list {
+  width: 55%;
+}
+
+.details .details_img img {
+  width: 100%;
+  padding-left: 150px;
+  padding-right: 80px;
+}
+.details .text_list h1 {
+  color: #212121;
+  font-family: "SemiBold", Sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+}
+.details .text_list ul li {
+  list-style: none;
+  margin: 15px 0;
+}
+.details .text_list li span {
+  font-family: "Lora", Sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6em;
+}
+.card_section {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.card_section .shadow_custom {
+  box-shadow: -12px 60px 76px -72px #aaa;
+}
+.radio_section_01 ul {
+  list-style: none;
+  padding: 0;
+  color: #869498;
+}
+.radio_section {
+  margin-top: 20px;
+}
+.radio_section_02 ul {
+  list-style: none;
+  padding: 0;
+}
+.radio_section_01 ul li svg {
+  fill: #869498;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.radio_section_02 ul li svg {
+  fill: #994bfb;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.line {
+  border-block-start: 1px solid #000000;
+  width: 80px;
+  margin-top: 13px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.inner_card h5 {
+  font-family: "Inter", Sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.inner_card .row .card {
+  background-color: #f7f7f7;
+  border: 1px solid #b0b0b0;
+  padding: 20px 30px;
+  margin: 0 10px 22px;
+  border-radius: 0.35em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+}
+.inner_card .row .card span {
+  font-size: 1.07em;
+  font-weight: 600;
+  color: #566376;
+}
+
+.billing_section h5 {
+  font-family: "Inter", Sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.billing_section .customer_details {
+  width: 60%;
+}
+
+.customer_details .input input {
+  width: 90%;
+  color: #333;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 13px 12px;
+  outline: none;
+}
+.customer_details .payment {
+  width: 90%;
+}
+.customer_details .payment .card .card-header {
+  background-color: #f8f6f8;
+  padding: 20px 20px;
+}
+.customer_details .payment .card .card-body {
+  padding: 20px 20px;
+  font-size: 0.92em;
+  line-height: 1.5;
+  color: #515151;
+}
+.customer_details .input {
+  padding-bottom: 30px;
+}
+
+.customer_details .order_btn button {
+  width: 90%;
+  text-align: center;
+  font-family: "Inter", Sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff3b3b;
+  color: white;
+}
+.customer_details .order_btn {
+  padding-bottom: 50px;
+}
+.billing_section .product_details {
+  width: 40%;
+}
+.product_details .title li {
+  padding: 1em 1.2em 1em 1.2em;
+}
+.product_details .title li h6 {
+  color: #555;
+  font-size: 14px;
+  font-weight: 500;
+}
+.accordion {
+  display: none;
+}
+.product_details {
+  display: block;
+}
+
+.footer {
+  padding: 100px;
+  background-color: #ffffff;
+  margin-top: -100px;
+}
+
+@media (max-width: 768px) {
+  .big_image img {
+    width: 100%;
+  }
+  .slider {
+    padding: 0 !important;
+  }
+  .radio_section {
+    padding-top: 20px;
+  }
+  .inner_card h5 {
+    margin-top: 20px;
+  }
+  .inner_card .row .card {
+    padding: 15px 15px !important;
+  }
+  .inner_card .row .card span {
+    font-size: 1em;
+  }
+  .inner_card .row .col-md-6 {
+    margin-bottom: 0px !important;
+  }
+  .details .details_img img {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    max-width: 75%;
+    margin-left: 50px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .details .details_img {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .details .text_list {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .details .text_list h1 {
+    font-size: 22px;
+    text-align: center;
+    padding: 20px 15px;
+  }
+  .details .text_list ul li {
+    padding-left: 45px;
+    margin: 5px 0;
+  }
+  .details .text_list li span {
+    font-size: 14px;
+  }
+  .card_section {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .card_section .card {
+    padding: 0px !important;
+  }
+  .radio_section_02 ul li svg {
+    margin-right: 0px !important;
+  }
+  .line {
+    border-block-start: 1px solid #000000;
+    width: 25px !important;
+    margin-top: 13px !important;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .contact h1 {
+    margin-top: 35px;
+    color: #1e302b;
+    font-family: "Hind Siliguri", Sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.2em;
+  }
+  .end_border {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .billing_section {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .billing_section .customer_details {
+    width: 100%;
+    margin-left: 15px;
+  }
+  .product_details_accordion {
+    width: 100%;
+  }
+
+  .product_details_accordion .title li {
+    padding: 8px 8px;
+  }
+  .product_details_accordion .title li h6 {
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .customer_details .order_btn button {
+    font-family: "SemiBold", Sans-serif;
+    font-size: 14px;
+    padding: 15px 0px;
+  }
+  .customer_details .order_btn {
+    padding-bottom: 20px;
+  }
+  .customer_details .payment .card .card-body {
+    padding: 15px 15px;
+    font-size: 0.9em;
+  }
+  .accordion {
+    display: block;
+  }
+  .product_details {
+    display: none;
+  }
+  .footer {
+    margin-top: -150px;
+  }
+
+  .carousel-inner .carousel-item > div {
+    display: none;
+  }
+  .carousel-inner .carousel-item > div:first-child {
+    display: block;
+  }
+}
+
+
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-end.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(25%);
+}
+
+.carousel-inner .carousel-item-start.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-25%);
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
