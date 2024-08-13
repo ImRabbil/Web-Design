@@ -1,0 +1,568 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: Bold_700;
+  src: url(../../fonts/Hind_Siliguri/HindSiliguri-Bold.ttf);
+}
+@font-face {
+  font-family: SemiBold_600;
+  src: url(../../fonts/Hind_Siliguri/HindSiliguri-SemiBold.ttf);
+}
+
+.home-hero {
+  background-color: #f9f9f9;
+  width: 100%;
+  position: relative;
+}
+
+.home-hero .hero-container {
+  width: 42%;
+  margin: auto;
+  text-align: center;
+  padding-top: 41px;
+  position: relative;
+  z-index: 1;
+}
+.home-background-overlay {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #ffffff 0%, #ffd2e8 100%);
+  opacity: 0.5;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.home-shape[data-negative="false"].home-shape-bottom,
+.home-shape[data-negative="true"].home-shape-top {
+  transform: rotate(180deg);
+}
+.home-shape-bottom:not([data-negative="true"]) svg {
+  z-index: -1;
+}
+.home-shape-bottom {
+  bottom: -1px;
+}
+.home-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+}
+.home-shape svg {
+  display: block;
+  width: calc(100% + 0px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.home-shape .home-shape-fill {
+  fill: #ffffff;
+  transform-origin: center;
+  transform: rotateY(0deg);
+}
+
+.hero-container .hero-header-text span {
+  font-size: 55px;
+  color: #ea3b8f;
+  font-weight: bold;
+  font-family: Roboto;
+  line-height: 2;
+}
+.hero-container .hero-header-text p {
+  color: #494949;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 1.3px;
+  word-spacing: 0px;
+  padding-bottom: 10px;
+}
+.hero-container .hero-footer-text p {
+  color: #494949;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 1.3px;
+  word-spacing: 0px;
+  padding-bottom: 10px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0.1px;
+  margin-top: 10px;
+}
+.hero-container .hero-footer-text span {
+  color: #c20661;
+  font-family: Roboto;
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 1.3px;
+  word-spacing: 0px;
+}
+
+.hero-image {
+  margin: 20px 0;
+  width: 100%;
+}
+.hero-image img{
+  width: 100%;
+}
+
+.hero-button {
+  padding-bottom: 5rem;
+}
+.hero-button a button {
+  font-family: roboto;
+  font-size: 24px;
+  background-color: #b30505;
+  border-radius: 17px 17px 17px 17px;
+  box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.5);
+  padding: 20px 70px 20px 70px;
+  color: white;
+  font-weight: 500;
+  line-height: 1;
+  border: 0;
+}
+
+.home-details {
+  width: 100%;
+  margin: 30px 0px;
+}
+@media (max-width: 425px) {
+  .home-details .home-details-container {
+    width: 100% !important;
+  }
+  .details-video .video-title {
+    width: 90% !important;
+    font-size: 22px !important;
+    padding: 20px 10px !important;
+  }
+
+  .home-hero .hero-container {
+    width: 90% !important;
+    padding-top: 20px !important;
+  }
+
+  .hero-container .hero-header-text p {
+    font-size: 22px !important;
+    line-height: 28px !important;
+    letter-spacing: 0.3px !important;
+  }
+
+  .hero-container .hero-footer-text p {
+    letter-spacing: 0px !important; 
+    font-size: 22px !important;
+    line-height: 30px !important;
+  }
+
+
+
+}
+.home-details .home-details-container {
+  width: 62%;
+  margin: auto;
+  text-align: center;
+
+  
+}
+
+.details-video .video-title {
+  font-family: roboto;
+  font-size: 24px;
+  background-color: #c20661;
+  border-radius: 17px 17px 17px 17px;
+  box-shadow: 0px 0px 8px -1px rgba(0, 0, 0, 0.5);
+  padding: 20px 70px 20px 70px;
+  color: white;
+  font-weight: 500;
+  line-height: 1;
+  border: 0;
+  width: 72%;
+  margin: auto;
+}
+.details-video .video {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+}
+.details-video .video .item {
+  padding: 10px;
+  width: 50%;
+}
+.details-video .video .item iframe {
+  border-radius: 25px;
+  box-shadow: -4px -4px 11px 0px rgba(0, 0, 0, 0.57);
+  width: 100%;
+  height: 330px;
+}
+
+@media (max-width: 425px) {
+  .details-video .video {
+    flex-direction: column;
+  }
+  .details-video .video .item {
+    padding: 10px 10px !important;
+    width: 95% !important;
+    margin: auto !important;
+  }
+  .details-video .video .item iframe {
+    height: 180px !important;
+  }
+}
+
+.details-reports {
+  width: 50%;
+  margin: auto;
+}
+.details-reports .report-title {
+  color: #c20661;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.details-reports .report-video iframe {
+  width: 100%;
+  height: 440px;
+}
+
+.report-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+.report-image img {
+  width: 24%;
+  margin: 5px;
+}
+@media (max-width: 425px) {
+  .details-reports {
+    width: 100% !important;
+    margin: auto;
+  }
+  .details-reports .report-video iframe {
+    width: 90% !important;
+    height: 190px !important;
+  }
+  .report-image img {
+    width: 90% !important;
+    margin: 5px;
+  }
+}
+
+.details-price {
+  width: 100%;
+}
+.price-banner {
+  width: 65%;
+  margin: auto;
+  background-color: #c20661;
+  padding: 2rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 26px;
+}
+
+.banner-title {
+  color: #ffffff;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.price-box {
+  padding: 5px 0px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.price-box .price-item {
+  background-color: #ffffff;
+  padding: 8px 60px;
+  margin: 0 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  font-size: 23px;
+  font-family: roboto;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+.price-title {
+  color: #c20661;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 34px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.price-image {
+  width: 65%;
+  margin: auto;
+}
+.price-image img {
+  width: 100%;
+}
+
+.details-price .footer-text {
+  width: 70%;
+  margin: auto;
+  background-color: #c20661;
+  padding: 15px 0;
+  margin-top: 20px;
+  color: #ffffff;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  border-radius: 15px;
+  line-height: 35px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.details-price .contact {
+  padding: 5rem;
+  text-align: center;
+  color: #74321a;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+@media (max-width: 425px) {
+  .price-box {
+    flex-direction: column;
+    padding: 10px !important;
+  }
+  .price-banner {
+    width: 90% !important;
+    padding: 2rem !important;
+  }
+  .price-box .price-item {
+    padding: 8px 60px !important;
+    margin: 5px 10px !important;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  }
+  .price-title {
+    font-size: 25px !important;
+    margin: 15px !important;
+  }
+  .price-image {
+    width: 90% !important;
+  }
+
+  .details-price .footer-text {
+    width: 90% !important;
+    font-size: 25px !important;
+  }
+  .details-price .contact {
+    padding: 2rem !important;
+    font-size: 22px !important;
+  }
+}
+
+.home-products {
+  width: 62%;
+  margin: auto;
+}
+.home-products .products {
+  background-color: #fffbfb;
+  padding: 20px;
+  margin: 30px 0;
+}
+.home-products .products .item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+.home-products .products .item-bottom {
+  border-bottom: 0;
+}
+.home-products .products .item li {
+  list-style: none;
+}
+.home-products .products .item li .list-item {
+  font-size: 14px;
+  padding: 10px 0;
+  font-weight: 600;
+}
+.list-item input,
+img,
+span {
+  margin: 0 5px;
+}
+.home-products .products .item-style {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  margin: 1px -32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  padding: 0 25px;
+  position: relative;
+}
+
+@media (max-width: 425px) {
+  .home-products {
+    width: 84% !important;
+    margin: auto;
+  }
+  .home-products .products .item {
+    font-size: 13px !important;
+  }
+  .home-products .products .item li .list-item {
+    font-size: 13px !important;
+    padding: 5px 0;
+  }
+  .home-products .products {
+    background-color: #fffbfb;
+    padding: 8px !important;
+    margin: 15px 0 !important;
+  }
+
+  .home-products .payment {
+    flex-direction: column;
+  }
+
+  .payment .billing {
+    width: 100% !important; 
+  }
+
+  .payment .order {
+    width: 100% !important;
+  }
+
+  .button  {
+    margin-bottom: 50px;
+  }
+
+
+}
+
+.home-products .payment {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment .billing {
+  width: 45%;
+}
+.payment .billing .item {
+  padding: 10px 0;
+}
+.payment .order {
+  width: 45%;
+}
+
+.order .order-item .item li {
+  list-style: none;
+}
+.order .order-item .item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #ccc;
+  align-items: center;
+  padding: 15px 0;
+}
+.order .order-item .item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #ccc;
+  align-items: center;
+  padding: 15px 0;
+}
+.order .cash-box {
+  width: 100%;
+  margin: 1em 0 0;
+  background-color: #f7f7f7;
+  padding: 15px;
+  font-family: "Hind Siliguri", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.order .note {
+  font-size: 11px;
+  color: #777;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.button button {
+  background-color: #f16334;
+  border: none;
+  width: 100%;
+  letter-spacing: 0.5px;
+  padding: 16px 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 3px;
+  color: white;
+  
+}
+.button  {
+  margin-bottom: 100px;
+}
+
+
+
+@media only screen and (max-width: 1440px)
+{
+  .home-details .home-details-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .home-details .home-details-container {
+    width: 90%;
+  }
+  .report-image img {
+    width: 20%;
+  }
+  .details-reports .report-video iframe {
+    height: 340px;
+  }
+  .price-banner {
+    width: 85%;
+  }
+  .home-hero .hero-container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width:768px)
+{
+  .price-box .price-item {
+    padding: 9px 42px;
+    line-height: 20px;
+  }
+  .price-image {
+    width: 85%;
+  }
+  .details-price .footer-text {
+    width: 85%;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .details-price .contact {
+    padding: 2rem;
+        font-size: 25px;
+  }
+  .home-products {
+    width: 85%;
+  }
+  .home-hero .hero-container {
+    width: 70%;
+  }
+}

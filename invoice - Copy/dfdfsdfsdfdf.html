@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Invoice</title>
+    <style>
+        .custom_container {
+            width: 700px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .invoice_title {
+            background-color: #e2e3e5;
+            padding: 10px;
+        }
+
+        .header {
+            width: 700px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header .logo_part {
+            width: 200px;
+        }
+
+        .header .logo_part .logo embed {
+            width: 112px;
+        }
+
+        .header .company_address {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .header .company_address .titles {
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        .header .company_address .bill_to .title {
+            font-size: 18px;
+        }
+
+        .invoice_info {
+            width: 300px;
+        }
+
+        .invoice_info .item {
+            width: 200px;
+            margin-left: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .bill_to {
+            margin-top: 20px;
+        }
+
+        .logo_part .from .title {
+            font-size: 18px;
+        }
+
+        .main {
+            margin-top: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .table-borderless {
+            width: 700px;
+            border: none;
+        }
+
+        .table-borderless>thead>tr {
+            background-color: #1f1f1f;
+            color: white;
+            text-align: left;
+        }
+
+        .table_head tr th:last-child {
+            text-align: right;
+        }
+
+        .table_body tr td:last-child {
+            text-align: right;
+        }
+
+        .table_head>tr>th {
+            padding: 1rem;
+            border: none;
+        }
+
+        .table_body>tr>td {
+            padding: 1rem;
+            border: none;
+        }
+
+        .table-borderless>tbody>tr:nth-child(even) {
+            background-color: #f2f8ff;
+        }
+
+        .calculate {
+            display: flex;
+            align-content: space-around;
+            flex-direction: column;
+        }
+
+        .calculate .text {
+            width: 280px;
+            margin-left: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 5px;
+        }
+
+        .calculate .text:last-child {
+            background-color: #f2f8ff;
+        }
+
+        .note {
+            width: 30%;
+        }
+
+        .color {
+            background-color: #e2e3e5;
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .invoice_info .item {
+                width: 90%;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .header .company_address .titles {
+                font-size: 25px;
+                font-weight: 400;
+            }
+
+            .invoice_info {
+                width: 90%;
+                margin-top: 10px;
+                margin-left: auto;
+            }
+
+            .logo_part .from .title {
+                font-size: 15px;
+            }
+
+            .header .company_address .bill_to .title {
+                font-size: 15px;
+            }
+
+            .calculate .text {
+                width: 50%;
+            }
+
+            .invoice_info .item {
+                width: 80%;
+            }
+
+            .header .logo_part .logo img {
+                width: 80%;
+            }
+
+            .note {
+                width: 50%;
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+            .invoice_info .item {
+                width: 80%;
+            }
+
+            .header .company_address {
+                width: 50%;
+                text-align: start;
+            }
+
+            .header .logo_part .logo img {
+                width: 80%;
+            }
+
+            .invoice_info .item {
+                width: 100%;
+            }
+
+            .note {
+                width: 100%;
+                margin-top: 15px;
+            }
+
+            .calculate .text {
+                width: 100%;
+            }
+
+            .custom_container {
+                width: 80%;
+            }
+
+            .header .company_address .titles {
+                font-size: 24px;
+                font-weight: 400;
+            }
+
+            .invoice_info .item {
+                width: 100%;
+                font-size: 10px;
+            }
+
+            .logo_part .from .title {
+                font-size: 14px;
+            }
+
+            .header .company_address .bill_to .title {
+                font-size: 14px;
+            }
+        }
+
+        @media only screen and (max-width: 375px) {
+            .custom_container {
+                width: 85%;
+            }
+
+            .header .company_address .titles {
+                font-size: 22px;
+            }
+
+            .invoice_info {
+                width: 100%;
+                margin-top: 4px;
+                margin-left: auto;
+            }
+
+            .logo_part .from .title {
+                font-size: 12px;
+            }
+
+            .header .company_address .bill_to .title {
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (max-width: 1440px) {
+            .invoice_info .item {
+                width: 70%;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .invoice_info .item {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .invoice_info {
+                width: 100%;
+                margin-top: 10px;
+                margin-left: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="custom_container">
+        <img src="https://prodevsltd.com/frontEnd/images/pro_devs_logo.svg" width="200px" height="200px" alt=" ">
+        <embed src="{{ asset('backEnd/images/pro_devs_logo.svg') }}" width="200px" height="200px" />
+    </div>
+    <div class="from">
+        <div class="title">
+            <b> From <br>
+                <span>Pro Devs Ltd.</span></b>
+        </div>
+        <div class="text">
+            <span>company@gmail.com</span><br>
+            <span>Cumilla</span><br>
+            <span>0175655665</span><br>
+            <span>Bangladesh</span><br>
+        </div>
+    </div>
+    <div class="company_address">
+        <div class="titles">
+            Invoice
+        </div>
+        <div class="invoice_info">
+            <div class="item">
+                <div class="left">
+                    Invoice No:
+                </div>
+                <div class="right">
+                    PDI-d445s5df554554
+                </div>
+            </div>
+            <div class="item">
+                <div class="left">
+                    Invoice Date:
+                </div>
+                <div class="right">
+                    21, August 2024
+                </div>
+            </div>
+        </div>
+        <div class="bill_to">
+            <div class="title">
+                <b> Bill To <br>
+                    <span>
+                        Rabbil
+                    </span></b>
+            </div>
+            <div class="text">
+                <span>
+                    rab.bil@gamil.com
+                </span><br>
+                <span>
+                    01754263545
+                </span><br>
+                <span>
+                    Muradnagar, Cumilla.
+                </span><br>
+            </div>
+        </div>
+    </div>
+    <section class="main">
+        <table class="table table-borderless">
+            <thead class="table_head">
+                <tr>
+                    <th>Description</th>
+                    <th>Qty</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody class="table_body">
+                <tr>
+                    <td>
+                        Lorem ipsum dolor sit amet,
+                    </td>
+                    <td>
+                        5
+                    </td>
+                    <td class="text-end">45 BDT</td>
+                </tr>
+                <tr>
+                    <td>
+                        Lorem ipsum dolor sit amet,
+                    </td>
+                    <td>
+                        5
+                    </td>
+                    <td class="text-end">45 BDT</td>
+                </tr>
+                <tr>
+                    <td>
+                        Lorem ipsum dolor sit amet,
+                    </td>
+                    <td>
+                        5
+                    </td>
+                    <td class="text-end">45 BDT</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="calculate">
+            <div class="text">
+                <div class="left">
+                    <b>Subtotal</b>
+                </div>
+                <div class="right">
+                    <b> 99 BDT</b>
+                </div>
+            </div>
+            <div class="text">
+                <div class="left">
+                    <b>Discount</b>
+                </div>
+                <div class="right">
+                    <b> 66 BDT</b>
+                </div>
+            </div>
+            <div class="text">
+                <div class="left">
+                    <b>Total</b>
+                </div>
+                <div class="right">
+                    <b> 78 BDT</b>
+                </div>
+            </div>
+            <div class="text">
+                <div class="left">
+                    <b>Paid</b>
+                </div>
+                <div class="right">
+                    <b> 44 BDT</b>
+                </div>
+            </div>
+            <div class="text">
+                <div class="left">
+                    <b>Due</b>
+                </div>
+                <div class="right">
+                    <b> 45 BDT</b>
+                </div>
+            </div>
+        </div>
+        <div class="note">
+            <b>Notes:</b><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis magnam maiores tenetur autem cumque
+            nostrum eius perspiciatis est? Maiores aliquid perspiciatis quis optio neque ipsum mollitia ipsa nulla
+            culpa rerum.
+        </div>
+    </section>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
